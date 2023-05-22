@@ -1,0 +1,442 @@
+    /* CSS POUR L'ACCUEIL*/
+/*------------------------------------------------------------------------------*/
+/*------------------------Made by Solaika Olivier--------------------------------*/
+/*------------------------------------------------------------------------------*/
+html{
+overflow-x : hidden;																											/*Enelever la barre de gauche a droite*/
+background-image: url(../img/video/background.jpg) ;	
+background-position: center;	
+background-size: 1920 1080;	
+background-repeat: no-repeat;																			/*Couleur de fond*/
+}
+
+                                /*------------------------------------------------------------------------------*/
+                                
+
+h1{
+text-align: center;																								/*Alignement du texte au centre*/
+font-family: Verdana, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif , sans-serif; 	   		/*Police d'écriture*/
+background-color: transparent;
+text-shadow: 0    0   2px #fefcc9,																			/*Décoration : les ombres, pour le titre*/
+1px -1px 3px #feec85,
+-2px -2px 4px #ffae34,
+2px -4px 5px #ec760c,
+-2px -6px 6px #cd4606,
+0   -8px 7px #973716,
+1px -9px 8px #451b0e;
+text-decoration: line-through;																					/*Ligne du centre qui coupe le texte en deux*/
+}
+a{
+text-decoration: none;
+}
+/*------------------------------------------------------------------------------*/
+
+body{
+font-family: Verdana, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif , sans-serif;
+margin: 0px;																													/*Marge*/
+padding: 0px 50px 50px;																											/*Rembourrage*/
+background:  no-repeat;
+line-height:1.4																													/*Hauteur de la boite d'une ligne */
+}
+
+/*------------------------------------------------------------------------------*/
+
+nav{
+width: 100%;																														/*Largeur*/
+background-color:#2c292f;
+border: 8px solid #5e355c;
+
+}
+
+/*------------------------------------------------------------------------------*/
+
+nav > ul{
+margin: 0px;
+padding: 0px;
+}
+/*------------------------------------------------------------------------------*/
+
+
+nav li{
+list-style-type: none;																											/*Style : none, pour enlever les tirrets ect*/
+}
+
+/*------------------------------------------------------------------------------*/
+nav > ul > li{
+float: left;																													/*position sur la page : gauche*/
+position: relative;																												/*position relative*/
+}
+
+/*------------------------------------------------------------------------------*/
+nav > ul::after{																													/*Faire les box il sera le dernier enfant de l'élément nav */
+content: "";
+display: table;
+clear: both;
+}
+
+/*------------------------------------------------------------------------------*/
+.submenu{
+display: none;
+}
+
+/*------------------------------------------------------------------------------*/
+nav input[type= checkbox]{
+display: none;
+}
+
+/*------------------------------------------------------------------------------*/
+nav label{
+display: none;
+}
+
+/*------------------------------------------------------------------------------*/
+nav a{
+display: inline-block;
+text-decoration: none;
+}
+
+/*------------------------------------------------------------------------------*/
+nav > ul > li > a{
+padding: 20px 20px;
+color : #ffffff;
+}
+
+/*------------------------------------------------------------------------------*/
+nav li:hover .submenu{																				/*Hover c pour l'animation des bouton*/
+display: inline-block;
+position: absolute;
+top: 100%;													
+left: 0px;
+padding: 0px;
+z-index: 1000 ;																					/* Pour couvrir les autres éléments (groupe emboité)*/
+}
+
+/*------------------------------------------------------------------------------*/
+.submenu li{
+border-bottom: 1px solid #cccccc ;
+}
+
+/*------------------------------------------------------------------------------*/
+.submenu li a{
+padding: 15px 30px;																			/*Espacement */
+font-size: 13px;
+color :#222533;
+width: 270px;																				/*Largeur*/
+}
+/*------------------------------------------------------------------------------*/
+nav input[type=checkbox]{
+display: none;
+}
+
+/*------------------------------------------------------------------------------*/
+nav label{
+display: none;
+}
+
+/*------------------------------------------------------------------------------*/
+.submenu{
+background-color: silver;
+display: none;
+}
+
+/*------------------------------------------------------------------------------*/
+nav input[type=checkbox]:checked ~ ul{																/*Crée la boite pour mettre le submenu dedans afin que quand la taille décran est en dessous du seuil cela remplace*/
+display: block;
+}
+
+/*----------------Quand ke screen est en dessous de 900px les conditions ci dessous s'éffectue ----------------------------------*/
+
+@media screen and (max-width: 900px){																	/*Pour les boites emboités*/ /*Restriction fenêtre 900px*/
+.menu-mobile{																						/*Menu pour les fenetres ayant moins de 900px*/		
+display: block;																					/*disposition boite*/
+color: white;																			
+background-color: rgba(235, 104, 133, 0.103);												 /*couleur via rgba pour avoir l'opacité ect*/
+text-align: center;																							
+padding: 12px 0px;
+}
+nav ul{
+display: none;
+}
+nav ul li, nav ul li a{
+width: 100%;
+text-align: center;
+}
+nav ul li a, nav ul li:hover a{
+padding: 10px 0px;
+width: 100%;
+}
+nav li:hover .submenu{
+display: block;
+position: static;
+width: auto;
+}
+.baner{
+width: auto;
+}
+.logo img{
+visibility: hidden;																				/*cacher un élément */
+}
+}
+ul li a:hover{
+background-color: #696d80;
+color:#b3bdf8 ;
+transition: 0.6s ease;																			/*Temps de transition : 0,6s*/
+}
+
+
+/*------------------------------------------------------------------------------*/
+.logo img{																								/*Paramétrage du logo pour le mettre en haut à gauche */
+top:0px;
+left:0px;
+width: 155px;
+height: auto;
+background-image: url('');
+background-repeat: no-repeat;
+background-position: left bottom ;
+position:absolute;
+}
+.Mise{																									/*Décoration du petit paragraphe pour la date de mise a jour */
+text-decoration: underline;
+font: Arial Black;
+font-weight: bold;																					/* Définir la graisse utilisé par le texte*/
+color: rgba(54, 28, 28, 0.966);
+text-align: center;
+}
+/*------------------------------------------------------------------------------*/
+
+                                                                                    /*Propriété pour javascript, c'est le css de l'affichage du h1*//*Trouvé sur un site internet pour animé les lettres*/
+.ml1 {
+font-weight: 900;																				/* Définir la graisse utilisé par le texte*/
+font-size: 3.5em;
+}
+.ml1 .letter {																					/*Pour les lettres*/
+display: inline-block;
+line-height: 1em;
+}
+
+.ml1 .text-wrapper {																				/*Propriété pour couper les lettres*/										
+position: relative;
+display: inline-block;
+padding-top: 0.1em;
+padding-right: 0.05em;
+padding-bottom: 0.15em;
+}
+
+.ml1 .line {																					/*Pour les lignes au dessus du texte*/
+opacity: 0;
+position: absolute;
+left: 0;
+height: 3px;
+width: 100%;
+background-color: #5e355c;
+;
+transform-origin: 0 0;
+}
+
+.ml1 .line1 { top: 0; }																	/*position des deux traits*/
+.ml1 .line2 { bottom: 0; }																/*"                      "*/
+
+/*------------------------------------------------------------------------------*/
+
+
+
+.ml6 {
+position: relative;
+font-weight: 900;																				/* Définir la graisse utilisé par le texte*/
+font-size: 3.3em;
+}
+
+.ml6 .text-wrapper {
+position: relative;
+display: inline-block;
+padding-top: 0.2em;										/*Rembourrage du haut*/
+padding-right: 0.05em;									/*/////*/
+padding-bottom: 0.1em;
+overflow: hidden;										/*cacher les 2 overflows x,y */
+}
+
+.ml6 .letter {
+display: inline-block;
+line-height: 1em;
+}
+
+.baner img{
+width: 100%;
+}
+
+/* FOOTER  */
+
+footer{
+position: relative;
+bottom: 0;
+border: 10px solid #5e355c;
+}
+
+@media (max-height:900px){
+footer { position: absolute; }
+header { padding-top:auto; }
+}
+
+
+.footer-distributed{
+background-color: #2c292f;
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 16px sans-serif;
+padding: 50px 50px 60px 50px;
+margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: inline-block;
+vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+width: 30%;
+}
+
+.footer-distributed h3{
+color:  #ffffff;
+font: normal 36px 'Cookie', cursive;
+margin: 0;
+}
+.footer-distributed .footer-left span{
+color: tomato;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+color:  #ffffff;
+margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+display:inline-block;
+line-height: 1.8;															/*Hauteur de la boite d'une ligne */
+text-decoration: none;
+color:  inherit;															/*Il n'hérite pas de la couleur */
+}
+
+.footer-distributed .footer-name{
+color:  #8f9296;
+font-size: 14px;
+font-weight: normal;														/* Définir la graisse utilisé par le texte*/
+margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+background-color:  #33383b;
+color: #ffffff;
+font-size: 25px;
+width: 38px;
+height: 38px;
+border-radius: 50%;																								/*Coin arrondis de la bordure */
+text-align: center;
+line-height: 42px;																								/*Hauteur de la boite d'une ligne */
+margin: 10px 15px;
+vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+font-size: 17px;																								/*Taille du fond*/
+line-height: 38px;																								/*Hauteur de la boite d'une ligne */
+}
+
+.footer-distributed .footer-center p{
+display: inline-block;
+color: #ffffff;
+vertical-align: middle;
+margin:0;																										/*Taille des marges */
+}
+
+.footer-distributed .footer-center p span{
+display:block;
+font-weight: normal;																							/* Définir la graisse utilisé par le texte*/
+font-size:14px;
+line-height:2;																									/*Hauteur de la boite d'une ligne */
+color: violet;
+}
+
+.footer-distributed .footer-center p a{
+color:  #c26065;
+text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+width: 30%;
+}
+
+.footer-distributed .footer-about{
+line-height: 20px;
+color:  #92999f;
+font-size: 13px;
+font-weight: normal;																						/* Définir la graisse utilisé par le texte*/
+margin: 0;
+}
+
+.footer-distributed .footer-about span{
+display: block;
+color:  #ffffff;
+font-size: 18px;
+font-weight: bold;																							/* Définir la graisse utilisé par le texte*/
+margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+background-color:  #33383b;
+border-radius: 2px;
+
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+line-height: 35px;
+
+margin-right: 3px;
+margin-bottom: 5px;
+}
+
+/* Le code pour le footer responsive */
+
+
+@media (max-width: 900px) {
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: block;
+width: auto;
+margin-bottom: 40px;
+text-align: center;
+height: auto;
+}
+
+.footer-distributed .footer-center i{
+margin-left: auto;
+}
+
+}
