@@ -4,32 +4,34 @@
 /*------------------------------------------------------------------------------*/
 html{
 overflow-x : hidden;																											/*Enelever la barre de gauche a droite*/
-background-image: url(../img/video/background.jpg) ;	
+background-image: url(../img/background.jpg) ;	
 background-position: center;	
-background-size: 1920 1080;	
+background-size: 200%;	
 background-repeat: no-repeat;																			/*Couleur de fond*/
 }
 
                                 /*------------------------------------------------------------------------------*/
                                 
 
-h1{
-text-align: center;																								/*Alignement du texte au centre*/
+.Titre h1{
+text-align: left;																								/*Alignement du texte au centre*/
 font-family: Verdana, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif , sans-serif; 	   		/*Police d'écriture*/
 background-color: transparent;
-text-shadow: 0    0   2px #fefcc9,																			/*Décoration : les ombres, pour le titre*/
-1px -1px 3px #feec85,
--2px -2px 4px #ffae34,
-2px -4px 5px #ec760c,
--2px -6px 6px #cd4606,
-0   -8px 7px #973716,
-1px -9px 8px #451b0e;
-text-decoration: line-through;																					/*Ligne du centre qui coupe le texte en deux*/
+color : white;																					/*Ligne du centre qui coupe le texte en deux*/
 }
+
+.logo{
+    position: absolute;
+    top: 0px;
+    right: 20%;
+}
+
 a{
 text-decoration: none;
 }
 /*------------------------------------------------------------------------------*/
+
+
 
 body{
 font-family: Verdana, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif , sans-serif;
