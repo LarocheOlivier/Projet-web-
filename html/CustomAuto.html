@@ -14,6 +14,7 @@
     <script type="text/javascript" src="../js/script.js"></script>
     <link rel="icon" type="image/gif" href="../img/Logo.png" />														<!-- Icone sur l'onglet -->
 	<link rel="stylesheet" href="../css/miseenpage.css">
+    <link rel="stylesheet" href="../css/Custom.css">
     <link rel="stylesheet" href="../css/CustomAuto.css">
 
     
@@ -41,13 +42,123 @@
                             <li><a href="CustomMoto.html">Custom Motos</a></li>
                         </ul>
                     </li>
+                    <li class="apropos_button"><a href="Apropos.html">A propos</a></li>
                 </ul>
             </nav>	
         </div>  
     </header>
 
     <section>
+        <div class="container_intro">
+        </div>
+        <div class="container_intro2">
+            <h1>Bienvenue dans l'Atelier de Customisation Auto en Ligne !</h1>
+            <p>N'attendez plus de savoir si votre customisation est possible, remplissez dés maintenant notre formulaie en ligne !
+                Une fois le formulaire remplit, cliquez sur le bouton "Enregistrer" et votre demande sera envoyé et nous vous 
+                répondrons par e-mail dés que possible !
+                <br><br>Un formulaire récapitulatif apparaîtra en bas de page.
+                <br><br>
+            </p>
+        </div>
+        <div class="container_form">
+            <h2>Formulaire :</h2>
 
+            <form method="post" name="ajoutPWD" action="#" class="box" id="addPWD" onsubmit="return false">
+                <fieldset>
+                    <legend><strong>Informations personnelles</strong></legend>
+
+                    <label>Nom :</label>
+                    <input id="Nom" name="Nom">
+                    <label>Prénom :</label>
+                    <input id="Prénom" name="Prénom">
+                    <label>Adresse e-mail :</label>
+                    <input id="Adm" name="Adm">
+                    <label>Téléphone :</label>
+                    <input id="tel" name="tel">
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Informations sur le véhicule</strong></legend>
+                    
+                    <label>Marque</label>
+                    <select id="marque">
+                        <option>--Veuillez choisir la marque--</option>
+                        <option>Mercedes-Benz</option>
+                        <option>Tesla</option>
+                        <option>BMW</option>
+                        <option>Toyota</option>
+                        <option>Nissan</option>
+                        <option>Honda</option>
+                        <option>Chevrolet</option>
+                    </select>
+                    <label>Modèle</label>
+                    <input id="mod">
+                    <label>Année de fabrication</label>
+                    <input id="annee" type="date">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Informations de customisation</strong></legend>
+                
+                    <p><strong>Cocher le/les cases correspondantes :</strong></p>
+
+                    <div class="vert-align">
+
+                        <label>Peinture et graphiques</label>
+                        <input name= "pg" id ="pg" type="checkbox">
+                        <label>Carénage et habillage</label>
+                        <input name="ch" id = "ch" type="checkbox">
+                        <label>Échappement </label>
+                        <input name="ech" id = "ech" type="checkbox">
+                        <label>Selles et/ou revêtements</label>
+                        <input name="selle" id = "selle" type="checkbox">
+                        <label>Performance du moteur</label>
+                        <input name="perf" id = "perf" type="checkbox">
+                        <label>Suspension</label>
+                        <input name="susp" id = "susp" type="checkbox">
+                        <label>Accessoires et ajout de fonctionnalités</label>
+                        <input name="acc" id = "acc" type="checkbox">
+                        <label>Roues et pneus</label>
+                        <input name="rp" id = "rp" type="checkbox">
+
+                    </div>
+                    <br>
+                    <label>Budget :</label>
+                    <input id="budget" name="budget">
+                    <br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Détails Complémentaires</strong></legend>
+
+                    <textarea id="message" name="message" rows="4" placeholder="Saisissez votre message ici"></textarea>
+
+                </fieldset>
+                <br>
+                <input type="submit" value="Valider" onclick ="">
+                <input type="reset" value="Supprimer" onclick="supprimer()">
+                <br>
+            </form>
+        </div>
+        <div class="container_tab">
+            <main class="box">
+                <h2>Tableau récapitulatif de votre demande :</h2>
+                <br>
+                <table id="tab">
+                    <caption></caption>
+                        <!-- 1ere ligne-->
+                        <tr>
+                            <th>Personnelles</th>
+                            <th>Véhicule</th>
+                            <th>Customisation</th>
+                            <th>Détails</th>
+                            <th>Estimation Prix</th>
+                            <th>Argent restant</th>
+                        </tr>
+                    </table>
+        </main>
+        </div>
     </section>
 
     <footer>
