@@ -1,4 +1,9 @@
-.custom_button > a{
-    color: black;
-    background-color: white;
+.container_intro{
+    background-image: url(/img/McLaren’s-Exotic-570GT-Sports-Car-Takes-Drive-For-Parkinson’s.jpg);
+    background-size: cover;
+    background-position: center bottom -49px;
+    margin: 40px;
+    height: 430px;
+    position: relative;
+    top: 180px;
 }

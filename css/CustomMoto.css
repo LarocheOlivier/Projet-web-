@@ -1,4 +1,9 @@
-.custom_button > a{
-    color: black;
-    background-color: white;
+.container_intro{
+    background-image: url(/img/7d828212ca9f709b231e199215f6a17d.png);
+    background-size:auto;
+    background-position: center bottom -180px;
+    margin: 40px;
+    height: 430px;
+    position: relative;
+    top: 180px;
 }

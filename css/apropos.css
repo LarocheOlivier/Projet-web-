@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "logo_font";
+    src: url("../police/Batrider\ Textured.ttf") format("truetype");
+  }
+
+.apropos_button > a{
+    background-color: white;
+    color: black;
+}
+
+.container_us{
+    position: relative;
+    background-color: black;
+    padding: 20px;
+    margin: 40px;
+    color: white;
+    top: 180px;
+    height: 1050px;
+}
+
+.titre{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    border: 1px solid white;
+}
+
+section{
+    height: 500px;
+}
+
+.paraph{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}

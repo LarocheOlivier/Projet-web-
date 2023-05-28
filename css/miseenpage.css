@@ -3,10 +3,9 @@
     src: url("../police/Batrider\ Textured.ttf") format("truetype");
   }
 
-
 html{
 overflow-x : hidden;																											
-background-image: url(../img/background.jpg) ;	
+background-color: #ffffff;
 background-position: center;	
 background-size: 200%;	
 background-repeat: no-repeat;	
@@ -17,12 +16,13 @@ section{
 }
 
 header{
-    background-color: rgba(0, 0, 0, 0.877);
+    background-image: url(../img/background.jpg) ;
     position: fixed;
     width: 100%;
     left: 0;
     z-index: 1;
     top: 0;
+    height: 188px;
 }
 
 .Titre h1{
@@ -66,31 +66,8 @@ line-height:1.4																													/*Hauteur de la boite d'une ligne */
 
 /*------------------------------------------------------------------------------*/
 
-nav{
-width: 100%;																														/*Largeur*/
-background-color:#000000;
-}
 
 /*------------------------SECTION------------------------------------------------*/
-
-.container{
-    position: relative;
-    height: 930px;
-    overflow: hidden;
-    margin: 30px;
-}
-
-.content{
-    position: absolute;
-    top: 160px;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    z-index: 0;
-    margin: 10px;
-
-
-}
 
 /*------------------------------------------------------------------------------*/
 
@@ -101,7 +78,8 @@ padding: 0px;
 
 
 nav li{
-list-style-type: none;																											/*Style : none, pour enlever les tirrets ect*/
+list-style-type: none;
+background-color: #000000;																						/*Style : none, pour enlever les tirrets ect*/
 }
 
 /*------------------------------------------------------------------------------*/
@@ -155,7 +133,8 @@ z-index: 1000 ;																					/* Pour couvrir les autres éléments (group
 
 /*------------------------------------------------------------------------------*/
 .submenu li{
-border: 1px solid #000000 ;
+border-bottom: 1px solid #00000028 ;
+background-color: #ffffff;
 }
 
 /*------------------------------------------------------------------------------*/
@@ -221,7 +200,7 @@ width: auto;
 }
 ul li a:hover{
 background-color: #ffffff;
-color:#000000 ;
+color: #000;
 transition: 0.3s ease;																			/*Temps de transition : 0,6s*/
 }
 
@@ -235,13 +214,19 @@ transition: 0.3s ease;																			/*Temps de transition : 0,6s*/
 /* FOOTER  */
 
 .footer{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width: 100%;  
     color: white;
     padding: 4px 15%;
     display: flex;
-    margin-top: 180px;
     font-size: 13px;
+    margin-top: 60%;
+}
+
+footer{
+    position:relative;
+    top: 80px;
+    width: 100%;
 }
 
 .footer a{

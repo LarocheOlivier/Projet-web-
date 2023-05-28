@@ -1,0 +1,111 @@
+.custom_button > a{
+    color: black;
+    background-color: white;
+}
+
+section{
+    height: 1500px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+
+/*Container*/
+
+.container_intro{
+    margin: 40px;
+    height: 430px;
+    position: relative;
+    top: 180px;
+}
+
+.container_intro2{
+    background-color: black;
+    color: white;
+    margin: 40px;
+    height: 200px;
+    position: relative;
+    padding: 20px;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.container_form{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    margin: 40px;
+    margin-bottom: 0;
+    height: 910px;
+    position: relative;
+    text-align: justify;
+}
+
+.container_tab{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    margin: 40px;
+    margin-bottom: 0;
+    height: 500px;
+    position: relative;
+    text-align: justify;
+}
+
+/*Tableau*/
+
+.c1{
+    background-color: blueviolet;
+}
+
+.c2{
+    background-color: rgb(255, 0, 0);
+}
+
+.c3{
+    background-color: rgb(226, 125, 43);
+}
+
+.c4{
+    background-color: rgb(251, 255, 0);
+}
+
+.c5{
+    background-color: rgb(38, 255, 0);
+}
+
+#tab{
+    text-align: center;
+}
+
+table, td {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 100%;
+    border: 1px solid black;
+}
+
+/* Formulaire */
+
+.vert-align{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+  }
+  
+  
+  
+  
+  
+  
+  
