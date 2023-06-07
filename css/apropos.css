@@ -2,7 +2,48 @@
     font-family: "logo_font";
     src: url("../police/Batrider\ Textured.ttf") format("truetype");
   }
+@font-face {
+    font-family: "logo_font";
+    src: url("../police/Batrider\ Textured.ttf") format("truetype");
+  }
 
+.apropos_button > a{
+    background-color: white;
+    color: black;
+}
+
+.container_us{
+    position: relative;
+    background-color: black;
+    padding: 20px;
+    margin: 40px;
+    color: white;
+    top: 180px;
+    height: auto;
+}
+
+.titre{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    border: 1px solid white;
+    background-image: url(../img/McLaren.jpg);
+    color: black;
+    background-position: center top -450px;
+}
+
+section{
+    height: 1260px;
+}
+
+.paraph{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+
+.footer{
+    margin-top: 40px;
+}
 .apropos_button > a{
     background-color: white;
     color: black;
