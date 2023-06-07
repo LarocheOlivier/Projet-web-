@@ -38,19 +38,19 @@ function generer(){
     var prix = 0;
 
     //Information personnelle :
-    var nom = document.getElementById("Nom");
-    var prenom = document.getElementById("Prenom");
-    var adresse = document.getElementById("Adm");
-    var tel = document.getElementById("tel");
+    var nom = document.getElementById("Nom").value;
+    var prenom = document.getElementById("Prenom").value;
+    var adresse = document.getElementById("Adm").value;
+    var tel = document.getElementById("tel").value;
 
-    var info_pers = "Nom : " + nom.value + " Prénom : " + prenom.value + " Adresse-mail : " + adresse.value + " tél : " + tel.value;
+    var info_pers = "Nom : " + nom + " Prénom : " + prenom + " Adresse-mail : " + adresse + " tél : " + tel;
 
     //Info vehicule :
-    var marque = document.getElementById("marque");
-    var mod = document.getElementById("mod");
-    var annee = document.getElementById("annee");
+    var marque = document.getElementById("marque").value;
+    var mod = document.getElementById("mod").value;
+    var annee = document.getElementById("annee").value;
 
-    var info_supp = marque.value + " " + mod.value +" " + annee.value;
+    var info_supp = marque + " " + mod +" " + annee;
 
     //Info checked :
     var liste_cust = "";
@@ -88,14 +88,14 @@ function generer(){
         prix += 749;
     }
 
-    var budget = document.getElementById("budget");
-    liste_cust += "Budget : " + budget.value;
+    var budget = document.getElementById("budget").value;
+    liste_cust += "Budget : " + budget;
 
     //Detail :
-    var msg = document.getElementById("message");
+    var msg = document.getElementById("message").value;
 
     //Restant argent
-    var arg_rest = budget.value - prix;
+    var arg_rest = budget - prix;
 
     //création d'une nouvelle ligne qui sera ajouté au tableau 
     var newline = document.createElement("tr");
@@ -110,7 +110,7 @@ function generer(){
     col1.textContent = info_pers;
     col2.textContent = info_supp;
     col3.textContent = liste_cust;
-    col4.textContent = msg.value;
+    col4.textContent = msg;
     col5.textContent = prix;
     col6.textContent = arg_rest;
 
@@ -127,7 +127,7 @@ function generer(){
 
     document.ajoutPWD.reset();
 
-    alert("Merci pour votre confiance ! Une réponse vous sera envoyée d'ici 3 jours ! Un récapitulatif se trouve en bas de page.");
+    alert("Merci pour votre confiance ! Une réponse vous sera envoyée dans quelques jours sur : " + adresse + " ! Un récapitulatif se trouve en bas de page.");
 }
 
 function supprimer(){
