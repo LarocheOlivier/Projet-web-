@@ -173,37 +173,48 @@ display: block;
 /*----------------Quand ke screen est en dessous de 900px les conditions ci dessous s'éffectue ----------------------------------*/
 
 @media screen and (max-width: 900px){																	/*Pour les boites emboités*/ /*Restriction fenêtre 900px*/
-.menu-mobile{																						/*Menu pour les fenetres ayant moins de 900px*/		
-display: block;																					/*disposition boite*/
-color: white;																			
-background-color: rgba(235, 104, 133, 0.103);												 /*couleur via rgba pour avoir l'opacité ect*/
-text-align: center;																							
-padding: 12px 0px;
-}
-nav ul{
-display: none;
-}
-nav ul li, nav ul li a{
-width: 100%;
-text-align: center;
-}
-nav ul li a, nav ul li:hover a{
-padding: 10px 0px;
-width: 100%;
-}
-nav li:hover .submenu{
-display: block;
-position: static;
-width: auto;
-}
+    .menu-mobile{																						/*Menu pour les fenetres ayant moins de 900px*/		
+    display: block;																					/*disposition boite*/
+    color: white;																			
+    background-color: rgba(235, 104, 133, 0.103);												 /*couleur via rgba pour avoir l'opacité ect*/
+    text-align: center;																							
+    padding: 12px 0px;
+    }
+    nav ul{
+    display: none;
+    }
+    nav ul li, nav ul li a{
+    width: 100%;
+    text-align: center;
+    }
+    nav ul li a, nav ul li:hover a{
+    padding: 10px 0px;
+    width: 100%;
+    }
+    nav li:hover .submenu{
+    display: block;
+    position: static;
+    width: auto;
+    }
 
-}
-ul li a:hover{
-background-color: #ffffff;
-color: #000;
-transition: 0.3s ease;																			/*Temps de transition : 0,6s*/
-}
+    ul li a:hover{
+    background-color: #ffffff;
+    color: #000;
+    transition: 0.3s ease;																			/*Temps de transition : 0,6s*/
+    }
 
+    .logo{
+        width: 100px;
+        height: 70%;
+        top: 0px;
+        right:0;
+    }
+    .Titre h1{
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 40px;
+    }
+}
 
 /*------------------------------------------------------------------------------*/
 
@@ -220,13 +231,9 @@ transition: 0.3s ease;																			/*Temps de transition : 0,6s*/
     padding: 4px 15%;
     display: flex;
     font-size: 13px;
-    margin-top: 60%;
-}
-
-footer{
-    position:relative;
-    top: 80px;
-    width: 100%;
+    justify-content: center;
+    flex: 1;
+    margin-top: 40px;
 }
 
 .footer a{
@@ -246,4 +253,6 @@ footer{
 @media (max-height:900px){
 header { padding-top:auto; }
 }
+
+
 
