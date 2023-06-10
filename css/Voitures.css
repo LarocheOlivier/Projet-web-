@@ -2,3 +2,63 @@
     color: black;
     background-color: white;
 }
+
+.container_us{
+    position: relative;
+    background-color: black;
+    padding: 20px;
+    margin: 40px;
+    color: white;
+    top: 180px;
+    height: auto;
+}
+
+.titre{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    border: 1px solid white;
+    background-image: url(../img/McLaren.jpg);
+    color: black;
+    background-position: center top -450px;
+}
+
+section{
+    height: auto;
+}
+
+.paraph{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
+
+.d1{
+    top : 50%;
+    display: block;
+    width: 600px;
+    height: 450px;
+    margin: 50px auto;
+    box-shadow: 0px 15px 10px -5px #1d1c1c;
+    background-color: #000000;
+    background-size: contain;
+    animation: fondu 15s ease-in-out infinite both;
+}
+.conteneur{
+    top : 200%;
+    max-width: 576px;
+    margin: 50px auto;
+}
+
+.d1:hover{
+    animation-play-state: paused;
+}
+@keyframes fondu{
+    0%{background-image: url(../img/voit1.jpg);}
+    33.33%{background-image: url(../img/voit2.jpeg);}
+    66.67%{background-image: url(../img/voit3.jpg);}
+    100%{background-image: url(../img/voit4.jpg);}
+}
+
+.footer{
+    margin-top: 400px;
+}
